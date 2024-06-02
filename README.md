@@ -1,3 +1,19 @@
+```
+docker run -e URL1=https://f1.com -e URL2=https://f1.com  erelbi/web-similarity-for-soar 
+[WDM] - Downloading: 19.9kB [00:00, 15.2MB/s]                   
+[WDM] - Downloading: 100%|██████████| 3.10M/3.10M [00:01<00:00, 2.96MB/s]
+[WDM] - Downloading: 19.9kB [00:00, 390kB/s]                    
+Similarity: 100.00%
+```
+
+```
+docker run  erelbi/web-similarity-for-soar https://f1.com https://f1.com 
+[WDM] - Downloading: 100%|██████████| 3.10M/3.10M [00:01<00:00, 2.79MB/s]
+[WDM] - Downloading: 19.9kB [00:00, 11.9MB/s]                   
+Similarity: 100.00%
+
+```
+
 Screenshot Comparison Script
 This script takes screenshots of two web pages and compares the images to determine their similarity using the Structural Similarity Index (SSIM).
 
